@@ -1,0 +1,1513 @@
+{
+	"version": 1,
+	"collections": [
+		{
+			"id": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+			"name": "Online-shop app",
+			"description": "",
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{authToken}}"
+					}
+				]
+			},
+			"events": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "93a622d6-3ea5-4459-911c-5c6827e55df9",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "3d9b9b5d-9dc4-4abf-adbe-2b3f9ccc3ff7",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"variables": [],
+			"order": [
+				"a61b38a7-8261-416d-a516-8a7b191c622f",
+				"b63157b6-73e8-4630-b8d4-a1fbcc8fbbc1",
+				"87834b5a-d50f-4b95-813c-d5399185b009",
+				"cf6f0c7d-40c8-43d2-bdca-83bb86cef339",
+				"14f97386-a753-4aad-be43-e5c6d90202e1",
+				"8268681a-8949-49c6-95f9-c06f787ea8b6",
+				"0a2334fa-adfb-4342-8de8-a9d3f47c22d3",
+				"f0c112f1-aeac-4bf1-b391-56f23ac99e79",
+				"28e577dd-1225-4683-881f-3a2d9f778137",
+				"3ffc2b38-5d70-4a1b-b560-eef4beb369e8",
+				"08e6b1cc-8010-4dfb-9da5-0543e5c40e74",
+				"166a227e-565c-4fb9-b394-3f313bd7a08b",
+				"0742f9e4-c85a-47a9-8397-17f1447878eb",
+				"55b55442-f05b-41fb-ae12-932167f88051",
+				"ab0123b9-0fd3-4fa2-8e3f-79a51e63bc08",
+				"f31f4a5b-4122-4007-b0b2-d8e3fbcddd5a",
+				"9824c98f-210a-4fd2-8e98-b734aa53faf9",
+				"fc27b851-471a-41a7-9d2f-18f011d2325c",
+				"3293f5c5-6491-4c19-8fbc-1a1ce23064c4",
+				"79488ed7-7c52-4689-91ca-9b7d9627dea0",
+				"ac4418b9-4a08-4e02-89b4-443ca217c931",
+				"44b0c830-769e-4fbd-9dad-0719aa7b46ed",
+				"3056471d-f3b9-4224-842f-8c793e1fe917",
+				"5878fb74-70cc-4165-9957-b89c39fd3ee2",
+				"8116907e-dfc6-4d2a-9739-629a04edc023",
+				"85d3e080-71dd-43ca-bc55-16a935e5d1f0",
+				"41318b83-a049-47d0-9d8e-0c3fd1caa152",
+				"664cf153-a633-4867-9de7-1575c56fcc62",
+				"5eb94f43-68cc-40cd-b913-d422df8df5d3",
+				"63021fad-bcf5-49e4-b6d5-73d9abcfebec"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {},
+			"folders": [],
+			"requests": [
+				{
+					"id": "0742f9e4-c85a-47a9-8397-17f1447878eb",
+					"name": "Update product",
+					"url": "{{url}}/api/products/5e4fdddaa74e141e2023a28f",
+					"description": "",
+					"data": [
+						{
+							"key": "image",
+							"value": "/C:/Users/Stas_Nesteruk/Downloads/the-road-815297_1920.jpg",
+							"description": "",
+							"type": "file",
+							"enabled": true
+						},
+						{
+							"key": "category",
+							"value": "Notebook",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "count",
+							"value": "15",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "params",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "PATCH",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "08e6b1cc-8010-4dfb-9da5-0543e5c40e74",
+					"name": "Create product",
+					"url": "{{url}}/api/products",
+					"description": "",
+					"data": [
+						{
+							"key": "image",
+							"value": "/C:/Users/Stas_Nesteruk/Downloads/the-road-815297_1920.jpg",
+							"description": "",
+							"type": "file",
+							"enabled": true
+						},
+						{
+							"key": "name",
+							"value": "Lenovo SD1245",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "description",
+							"value": "Monitor 13\" / Intel Core I5 (2,4 GHz) / RAM 12 GB / HDD 770 GB / Weight 6,0 kg / Bluetooth / Webcam / LAN / USB / WiFi",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "price",
+							"value": "1000",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "producer",
+							"value": "Lenovo",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "category",
+							"value": "Notebook",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "params",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "0a2334fa-adfb-4342-8de8-a9d3f47c22d3",
+					"name": "Update user",
+					"url": "{{url}}/api/me",
+					"description": "",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "PATCH",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"rawModeData": "{\n\t\"name\": \"Alex\",\n\t\"email\": \"alex@email.com\",\n\t\"password\": \"alexpass\"\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "14f97386-a753-4aad-be43-e5c6d90202e1",
+					"name": "Get userProfile",
+					"url": "{{url}}/api/me",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "166a227e-565c-4fb9-b394-3f313bd7a08b",
+					"name": "Delete product",
+					"url": "{{url}}/api/products/5e4f9f7d7d5e3b1e00df1eeb",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "DELETE",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "28e577dd-1225-4683-881f-3a2d9f778137",
+					"name": "Get productsByCategory",
+					"url": "{{url}}/api/products/category/notebook",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "3056471d-f3b9-4224-842f-8c793e1fe917",
+					"name": "Delete category",
+					"url": "{{url}}/api/category/5e4e77caf8087b3548fda36d",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "DELETE",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "3293f5c5-6491-4c19-8fbc-1a1ce23064c4",
+					"name": "Get userOrders",
+					"url": "{{url}}/api/my-orders",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "3ffc2b38-5d70-4a1b-b560-eef4beb369e8",
+					"name": "Get product",
+					"url": "{{url}}/api/products/5e4f9f7d7d5e3b1e00df1eeb",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "41318b83-a049-47d0-9d8e-0c3fd1caa152",
+					"name": "Delete producer",
+					"url": "{{url}}/api/producer/5e4e8889d1ea472a38806292",
+					"description": "",
+					"data": null,
+					"dataOptions": {
+						"raw": {
+							"language": "javascript"
+						}
+					},
+					"dataMode": null,
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/javascript",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "DELETE",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"headers": "Content-Type: application/javascript\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "44b0c830-769e-4fbd-9dad-0719aa7b46ed",
+					"name": "Add category",
+					"url": "{{url}}/api/category/",
+					"description": "",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"rawModeData": "{\n\t\"name\": \"SmartWatch\"\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "55b55442-f05b-41fb-ae12-932167f88051",
+					"name": "Search product",
+					"url": "{{url}}/api/products/search?value=Asus",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "value",
+							"value": "Asus",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "5878fb74-70cc-4165-9957-b89c39fd3ee2",
+					"name": "Update category",
+					"url": "{{url}}/api/category/5e4e7dc0beb780376ce6e633",
+					"description": "",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "PATCH",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"rawModeData": "{\n\t\"name\": \"HeadSet\"\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "5eb94f43-68cc-40cd-b913-d422df8df5d3",
+					"name": "Delete product from cart",
+					"url": "{{url}}/api/shopping-cart",
+					"description": "",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "DELETE",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"rawModeData": "{\n\t\"id\": \"5e4cf7760ab24f23e02233dc\",\n\t\"count\": \"4\"\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "63021fad-bcf5-49e4-b6d5-73d9abcfebec",
+					"name": "TEST IMAGE",
+					"url": "{{url}}/api/test",
+					"description": "",
+					"data": [
+						{
+							"key": "image",
+							"value": "/C:/Users/Stas_Nesteruk/Downloads/the-road-815297_1920.jpg",
+							"description": "",
+							"type": "file",
+							"enabled": true
+						}
+					],
+					"dataOptions": null,
+					"dataMode": "params",
+					"headerData": [],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "664cf153-a633-4867-9de7-1575c56fcc62",
+					"name": "Update producerById",
+					"url": "{{url}}/api/producer/5e4e8e7f894a922a0c80d3d2",
+					"description": "",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "PATCH",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"rawModeData": "{\n\t\"name\": \"Redmi\"\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "79488ed7-7c52-4689-91ca-9b7d9627dea0",
+					"name": "Delete orderById",
+					"url": "{{url}}/api/order/5e4fafcf140b273af022851a",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "DELETE",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "8116907e-dfc6-4d2a-9739-629a04edc023",
+					"name": "Get producers",
+					"url": "{{url}}/api/producer",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "8268681a-8949-49c6-95f9-c06f787ea8b6",
+					"name": "Delete user",
+					"url": "{{url}}/api/me",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "DELETE",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "85d3e080-71dd-43ca-bc55-16a935e5d1f0",
+					"name": "Create producer",
+					"url": "{{url}}/api/producer",
+					"description": "",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"rawModeData": "{\n\t\"name\": \"Nike\"\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "87834b5a-d50f-4b95-813c-d5399185b009",
+					"name": "Logout user",
+					"url": "{{url}}/api/logout",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "9824c98f-210a-4fd2-8e98-b734aa53faf9",
+					"name": "Make order",
+					"url": "{{url}}/api/order",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "a61b38a7-8261-416d-a516-8a7b191c622f",
+					"name": "SignUp user",
+					"url": "{{url}}/api/signup",
+					"description": "",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f2335fb6-c087-4eca-929a-d266b56071e9",
+								"exec": [
+									"if(pm.response.code === 200){",
+									"    pm.environment.set('authToken', pm.response.json().token)",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"preRequestScript": null,
+					"tests": "if(pm.response.code === 200){\n    pm.environment.set('authToken', pm.response.json().token)\n}",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"rawModeData": "{\n\t\"name\": \"Mike\",\n\t\"email\": \"mike@email.com\",\n\t\"password\": \"mikepass\"\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "ab0123b9-0fd3-4fa2-8e3f-79a51e63bc08",
+					"name": "Get cart",
+					"url": "{{url}}/api/shopping-cart",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "ac4418b9-4a08-4e02-89b4-443ca217c931",
+					"name": "Get categories",
+					"url": "{{url}}/api/category",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "b63157b6-73e8-4630-b8d4-a1fbcc8fbbc1",
+					"name": "Login user",
+					"url": "{{url}}/api/login",
+					"description": "",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "049bf55f-e89f-4925-bad9-06dd9c3d1b95",
+								"exec": [
+									"if(pm.response.code === 200){",
+									"    pm.environment.set('authToken', pm.response.json().token);",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"preRequestScript": null,
+					"tests": "if(pm.response.code === 200){\n    pm.environment.set('authToken', pm.response.json().token);\n}",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"rawModeData": "{\n\t\"email\": \"admin@email.com\",\n\t\"password\": \"adminpass\"\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "cf6f0c7d-40c8-43d2-bdca-83bb86cef339",
+					"name": "LogoutAll user",
+					"url": "{{url}}/api/logout-all",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "f0c112f1-aeac-4bf1-b391-56f23ac99e79",
+					"name": "Get products",
+					"url": "{{url}}/api/products",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "f31f4a5b-4122-4007-b0b2-d8e3fbcddd5a",
+					"name": "Add productToCart",
+					"url": "{{url}}/api/shopping-cart",
+					"description": "",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"rawModeData": "{\n\t\"id\": \"5e4cf7760ab24f23e02233dc\",\n\t\"count\": 5\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "fc27b851-471a-41a7-9d2f-18f011d2325c",
+					"name": "Get order",
+					"url": "{{url}}/api/order/5e4d312924f6ab23ac063a64",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6f242c15-ef8f-4a70-8f16-411fada5f48d",
+					"headers": "",
+					"pathVariables": {}
+				}
+			]
+		},
+		{
+			"id": "7cb8e2c8-6b1f-4678-9f80-13501bf0a4ac",
+			"name": "Task App",
+			"description": "",
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{authToken}}"
+					}
+				]
+			},
+			"events": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "784c7dc2-5d68-4dd0-885e-cf54bef7d36b",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "f32d2f37-9af4-4975-8bca-b9ea2b1995a0",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"variables": [],
+			"order": [
+				"da6c6e80-e7db-4b2a-828e-f52381536d0e",
+				"86521308-c44b-475c-b129-4e668cd68234",
+				"858f0a73-10ca-4a13-b28c-bb646a146b3c",
+				"9c6f414b-f4cd-4c7b-8082-c0a51a74ba3f",
+				"5d09ade2-f809-433c-a87e-ba0ab560a1a8",
+				"6a4f9f9a-e3f1-4734-b4b6-5280bddfa301",
+				"1681d3c9-689d-42f3-ac41-ab8819dc81b2",
+				"e5bb9242-f7dc-4500-aea5-d3406c12c0bb",
+				"a8df0674-bd9d-4d97-81e3-8e1e7a5772c6",
+				"fe4bb91d-44e8-4887-8864-2438f5c8bebe",
+				"20c3a53e-2bec-4d38-b58c-7d9993f708bb",
+				"06d81e11-76e8-4be5-b527-9d31605dadb3",
+				"6dec06de-1d7c-457c-8657-04217844927f",
+				"33f6c3b9-3f87-4169-bb53-9f040b808d61",
+				"20047553-b273-469f-9e05-27f07a976f22"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {},
+			"folders": [],
+			"requests": [
+				{
+					"id": "06d81e11-76e8-4be5-b527-9d31605dadb3",
+					"name": "Delete user",
+					"url": "{{url}}/api/user/users/me",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "DELETE",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "7cb8e2c8-6b1f-4678-9f80-13501bf0a4ac",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "1681d3c9-689d-42f3-ac41-ab8819dc81b2",
+					"name": "Get userById",
+					"url": "{{url}}/api/user/users/5e3a99132775573fd028ce7d",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "7cb8e2c8-6b1f-4678-9f80-13501bf0a4ac",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "20047553-b273-469f-9e05-27f07a976f22",
+					"name": "Delete avatar",
+					"url": "",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "7cb8e2c8-6b1f-4678-9f80-13501bf0a4ac",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "20c3a53e-2bec-4d38-b58c-7d9993f708bb",
+					"name": "Update task",
+					"url": "{{url}}/api/user/tasks/5e3c0c8a667732466c018729",
+					"description": "",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "PATCH",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "7cb8e2c8-6b1f-4678-9f80-13501bf0a4ac",
+					"rawModeData": "{\n\t\"description\": \"Need to pay for phone\"\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "33f6c3b9-3f87-4169-bb53-9f040b808d61",
+					"name": "Upload avatar",
+					"url": "localhost:3000/api/user/users/me/avatar",
+					"description": "",
+					"data": [
+						{
+							"key": "avatar",
+							"value": "/C:/Users/Stas_Nesteruk/Downloads/the-road-815297_1920.jpg",
+							"description": "",
+							"type": "file",
+							"enabled": true
+						}
+					],
+					"dataOptions": null,
+					"dataMode": "params",
+					"headerData": [],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "7cb8e2c8-6b1f-4678-9f80-13501bf0a4ac",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "5d09ade2-f809-433c-a87e-ba0ab560a1a8",
+					"name": "Create task",
+					"url": "{{url}}/api/user/tasks",
+					"description": "",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "7cb8e2c8-6b1f-4678-9f80-13501bf0a4ac",
+					"rawModeData": "{\n\t\"description\": \"Have to go to a doctor\"\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "6a4f9f9a-e3f1-4734-b4b6-5280bddfa301",
+					"name": "Get profile",
+					"url": "{{url}}/api/user/users/me",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTNkMzY1ZmJjNzQxMTQyMDhhMzI5ZjMiLCJpYXQiOjE1ODEwNjk5MTl9.XwSjiWDrXmhdU0Dcmx79AzgelLCYFx6JjW_M2oYcdeA"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTNkMzY1ZmJjNzQxMTQyMDhhMzI5ZjMiLCJpYXQiOjE1ODEwNjk5MTl9.XwSjiWDrXmhdU0Dcmx79AzgelLCYFx6JjW_M2oYcdeA"
+					},
+					"collectionId": "7cb8e2c8-6b1f-4678-9f80-13501bf0a4ac",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "6dec06de-1d7c-457c-8657-04217844927f",
+					"name": "Delete task",
+					"url": "{{url}}/api/user/tasks/5e3c0bc2667732466c018727",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "DELETE",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "7cb8e2c8-6b1f-4678-9f80-13501bf0a4ac",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "858f0a73-10ca-4a13-b28c-bb646a146b3c",
+					"name": "Logout user",
+					"url": "{{url}}/api/user/logout",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "7cb8e2c8-6b1f-4678-9f80-13501bf0a4ac",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "86521308-c44b-475c-b129-4e668cd68234",
+					"name": "Login user",
+					"url": "{{url}}/api/user/login",
+					"description": "",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "noauth",
+						"noauth": []
+					},
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9fc26754-34d3-46d9-81fd-12e3e275f70b",
+								"exec": [
+									"if(pm.response.code === 200){",
+									"    pm.enviroment.set('authToken', pm.response.json().token)",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"preRequestScript": null,
+					"tests": "if(pm.response.code === 200){\n    pm.enviroment.set('authToken', pm.response.json().token)\n}",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "7cb8e2c8-6b1f-4678-9f80-13501bf0a4ac",
+					"rawModeData": "{\n\t\"email\": \"mike@email.com\",\n\t\"password\": \"mikypass\"\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "9c6f414b-f4cd-4c7b-8082-c0a51a74ba3f",
+					"name": "LogoutAll user",
+					"url": "{{url}}/api/user/logout-all",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "7cb8e2c8-6b1f-4678-9f80-13501bf0a4ac",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "a8df0674-bd9d-4d97-81e3-8e1e7a5772c6",
+					"name": "Get taskById",
+					"url": "{{url}}/api/user/tasks/5e3d60059e7a923c94a58878",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "7cb8e2c8-6b1f-4678-9f80-13501bf0a4ac",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "da6c6e80-e7db-4b2a-828e-f52381536d0e",
+					"name": "Create user",
+					"url": "{{url}}/api/user/join",
+					"description": "",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "noauth",
+						"noauth": []
+					},
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "eeae7eb5-a383-4e26-9546-e003636caa16",
+								"exec": [
+									"if(pm.response.code === 201){",
+									"    pm.environment.set('authToken', pm.response.json().token)",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"preRequestScript": null,
+					"tests": "if(pm.response.code === 201){\n    pm.environment.set('authToken', pm.response.json().token)\n}",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "7cb8e2c8-6b1f-4678-9f80-13501bf0a4ac",
+					"rawModeData": "{\n\t\"name\": \"Milk\",\n\t\"email\": \"mike@test.com\",\n\t\"password\": \"mikypass\",\n\t\"age\": 34\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "e5bb9242-f7dc-4500-aea5-d3406c12c0bb",
+					"name": "Get tasks",
+					"url": "{{url}}/api/user/tasks",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "7cb8e2c8-6b1f-4678-9f80-13501bf0a4ac",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "fe4bb91d-44e8-4887-8864-2438f5c8bebe",
+					"name": "Update user",
+					"url": "{{url}}/api/user/users/me",
+					"description": "",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "PATCH",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "7cb8e2c8-6b1f-4678-9f80-13501bf0a4ac",
+					"rawModeData": "{\n\t\"age\": 28\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				}
+			]
+		}
+	],
+	"environments": [
+		{
+			"id": "32248528-50c4-4553-bc29-9ab2f83e6b51",
+			"name": "Online-shop API (dev)",
+			"values": [
+				{
+					"key": "url",
+					"value": "localhost:3000",
+					"enabled": true
+				},
+				{
+					"key": "authToken",
+					"value": "",
+					"enabled": true
+				}
+			]
+		},
+		{
+			"id": "59fbef67-b14b-402a-88b8-a97a233300a1",
+			"name": "Task manager API (prod)",
+			"values": []
+		},
+		{
+			"id": "f6a34f88-325e-4774-a5e1-57c48754eef5",
+			"name": "Task manager API (dev)",
+			"values": [
+				{
+					"key": "url",
+					"value": "localhost:3000",
+					"enabled": true
+				},
+				{
+					"key": "authToken",
+					"value": "",
+					"enabled": true
+				}
+			]
+		},
+		{
+			"id": "2095ab05-4d11-4073-9d93-46c1f0efb8d7",
+			"name": "My Workspace - globals",
+			"values": []
+		}
+	],
+	"headerPresets": [],
+	"globals": []
+}

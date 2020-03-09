@@ -1,0 +1,112 @@
+plugins:
+  - node
+  - mocha
+  - import
+extends:
+  - plugin:node/recommended
+  - plugin:import/errors
+  - eslint:recommended
+parserOptions:
+    ecmaVersion: 8
+    sourceType: module
+parser: babel-eslint
+env:
+    browser: false
+    node: true
+    mocha: true
+rules:
+  indent:
+    - 1
+    - 2
+    - SwitchCase: 1
+  no-console: 2
+  semi: 2
+  semi-spacing:
+    - 2
+    - before: false
+      after: true
+  quotes:
+    - 2
+    - single
+
+  node/no-unsupported-features: 0
+  node/no-unpublished-import: 0
+  node/no-missing-import:
+    - 2
+    - tryExtensions:
+      - .js
+      - .mjs
+      - .json
+  node/no-deprecated-api:
+    - 2
+    - ignoreModuleItems:
+      - crypto.createCipher
+      - crypto.createDecipher
+
+  import/no-commonjs: 2
+  import/no-extraneous-dependencies: 0
+  import/no-unresolved: 0
+  import/extensions: 0
+  import/no-dynamic-require: 0
+
+  object-curly-newline:
+    - 2
+    - consistent: true
+  function-paren-newline: 0
+  prefer-destructuring: 0
+  consistent-return: 0
+  linebreak-style: 0
+  no-plusplus: 0
+  max-len: 0
+  no-prototype-builtins: 0
+  require-atomic-updates: 0
+  no-useless-escape: 0
+  no-trailing-spaces: 2
+
+  space-before-blocks: 2
+  keyword-spacing: 2
+  space-infix-ops: 2
+  object-curly-spacing:
+    - 2
+    - always
+  key-spacing:
+    - 2
+    - beforeColon: false
+      afterColon: true
+  brace-style: 2
+
+  comma-dangle:
+    - 2
+    - functions: ignore
+      objects: always-multiline
+      arrays: always-multiline
+      imports: always-multiline
+      exports: always-multiline
+  no-use-before-define:
+    - 2
+    - functions: false
+  callback-return:
+    - 2
+    - - next
+      - sendJsonError
+      - sendValidationError
+      - sendJsonData
+      - sendUnauthorizedError
+      - res.sendStatus
+
+overrides:
+  - files: '*.test.mjs'
+    rules:
+      callback-return: 0
+
+      mocha/max-top-level-suites: 2
+      mocha/no-exclusive-tests: 2
+      mocha/no-global-tests: 2
+      mocha/no-top-level-hooks: 2
+      mocha/no-skipped-tests: 2
+  - files: '*.js'
+    rules:
+      import/no-commonjs: 0
+  - files: 'task.strategy.mjs'
+    rules:
+      callback-return: 0
